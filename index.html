@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <link rel="shortcut icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
@@ -35,6 +35,11 @@
 </style>
 </head>
 <body>
+  form action="/submit" method="POST">
+        <!-- Your form fields here -->
+        <div class="g-recaptcha" data-sitekey="6LeBkOYpAAAAABFmbK7ybgxb5Q1c2Na26PpM5MPs"></div>
+        <input type="submit" value="Submit">
+    </form>
 <div class="animsition">
 <div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
 
