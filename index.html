@@ -1,155 +1,226 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikunj Panthi | Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official portfolio of Nikunj Panthi. A student and freelancer specializing in web development.">
+    <meta name="keywords" content="Nikunj Panthi, Nikunja Panthi, Nikunj, Web Developer, Freelancer, IT Student">
+    <meta name="author" content="Nikunj Panthi">
 
-<link rel="shortcut icon" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-<title>Nikunj Panthi/ Nikunja Panthi</title>
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Nikunj Panthi | Portfolio">
+    <meta property="og:description" content="Official portfolio of Nikunj Panthi. Explore my work, skills, and projects.">
+    <meta property="og:image" content="Nikunj_images/Nikunj11.jpg">
+    <meta property="og:url" content="https://www.nikunjapanthi.com.np">
+    <meta property="og:type" content="website">
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&amp;display=swap" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" media="screen">
-<style>
-/* Ensure call and email links are visible on mobile */
-@media (max-width: 767px) {
-  .contacts {
-    display: block !important;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .contact-item {
-    display: inline-block;
-    margin: 5px 10px;
-  }
-}
-.section {
-    height: 100vh;
-    overflow: hidden;
-}
-  .pp-scrollable text-white section section-1{
-    padding:40px;
-  }
-</style>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nikunj Panthi",
+        "alternateName": "Nikunja Panthi",
+        "birthDate": "2004-08-26",
+        "jobTitle": "Student, Freelancer, Web Developer, Photographer",
+        "alumniOf": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Higher Education",
+                "educationalCredentialAwarded": "Bachelor of Information and Technology",
+                "school": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Gandaki University",
+                    "url": "https://www.gandakiuniversity.edu.np"
+                }
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Higher Education",
+                "educationalCredentialAwarded": "Higher Secondary",
+                "school": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Xavier International College",
+                    "url": "https://www.xic.edu.np"
+                }
+            }
+        ],
+        "sameAs": [
+            "https://x.com/NikunjS11289987",
+            "https://www.facebook.com/nikunj.panthi",
+            "https://linkedin.com/in/nikunja-panthi-47107a294"
+        ],
+        "url": "https://www.nikunjapanthi.com.np",
+        "image": "https://www.nikunjapanthi.com.np/images/profile.jpg",
+        "description": "Nikunj Panthi is a Student, Freelancer, and Web Developer specializing in front-end and back-end development. He is passionate about photography and creative projects.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+9779762747282",
+            "contactType": "Customer Service",
+            "areaServed": "NP",
+            "availableLanguage": "English"
+        },
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "Java",
+            "Photography"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nepal",
+            "addressRegion": "Central Development Region",
+            "postalCode": "44600",
+            "addressCountry": "Nepal"
+        }
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-item {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-<div class="animsition">
-<div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
 
-<div class="click-capture"></div>
-
-<div class="menu">
-<span class="close-menu icon-cross2 right-boxed"></span>
-<ul class="menu-list right-boxed">
-<li data-menuanchor="page1">
-<a href="#page1">Home</a>
-</li>
-<li data-menuanchor="page2">
-<a href="#page2">About</a>
-</li>
-<li data-menuanchor="page3">
-<a href="#page3">Resume</a>
-</li>
-<li data-menuanchor="page4">
-<a href="#page4">Contact</a>
-</li>
-</ul>
-<div class="menu-footer right-boxed">
-<div class="social-list">
-<a href="https://x.com/NikunjS11289987" class="icon ion-social-twitter"></a>
-<a href="https://www.facebook.com/nikunj.panthi" class="icon ion-social-facebook"></a>
-<a href="https://linkedin.com/in/nikunja-panthi-47107a294" class="icon ion-social-linkedin"></a>
-</div>
-</div>
-</div>
-
-<header class="navbar boxed">
-<div class="navbar-bg"></div>
-<a class="brand" href="#">
-<img class="brand-img" alt="" src="/image/18e84911-4764-4efe-8f39-adfa34cdc7ea.jpg">
-<div class="brand-info">
-<div class="brand-name">Nikunj</div>
-<div class="brand-text">Panthi</div>
-</div>
-</a>
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<div class="contacts d-none d-md-block">
-<div class="contact-item">
-<a href="tel:+977 9762747282"> Call Me </a>
-</div>
-<div class="contact-item spacer"> / </div>
-<div class="contact-item">
-<a href="mailto:info@nikunjapanthi.com.np">info@nikunjapanthi.com.np</a>
-</div>
-</div>
+<header>
+    <h1>Nikunj Panthi</h1>
+    <p>Student | Freelancer | Web Developer</p>
 </header>
-<div class="copy-bottom white boxed">© Nikunj 2024.</div>
-<div class="social-list social-list-bottom boxed">
-<a href="https://x.com/NikunjS11289987" class="icon ion-social-twitter"></a>
-<a href="https://www.facebook.com/nikunj.panthi" class="icon ion-social-facebook"></a>
-<a href="https://linkedin.com/in/nikunja-panthi-47107a294" class="icon ion-social-linkedin"></a>
-</div>
 
-<div id="pagepiling">
-    <div data-anchor="page1" class="pp-scrollable text-white section section-1">
-     <center><h1> K hereko k </h1></center> 
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#photos">See My Photos</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am Nikunj Panthi, a second-year Bachelor of Information and Technology student at Gandaki University. I have a passion for web development and freelancing.</p>
+</section>
+
+<section id="photos">
+    <h2>See My Photos</h2>
+    <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+        <h3>When is Nikunj Panthi's birthday?</h3>
+        <p>My birthday is on August 26, 2004.</p>
     </div>
-
-    <div data-anchor="page2" class="pp-scrollable section section-2">
-        <h1> Nahera vo</h1>
+    <div class="faq-item">
+        <h3>Where did Nikunj Panthi study?</h3>
+        <p>I studied +2 at Xavier International College and am currently pursuing a Bachelor's at Gandaki University.</p>
     </div>
-
-    <div data-anchor="page3" class="pp-scrollable section section-3">
-      <h1> Vaneko ta mana</h1>
+    <div class="faq-item">
+        <h3>What skills does Nikunj Panthi have?</h3>
+        <p>I am skilled in HTML, CSS, Java, JavaScript, and PHP.</p>
     </div>
+</section>
 
-    <div data-anchor="page4" class="pp-scrollable section section-4">
-    <h1> La yeti nai ho</h1>
-    </div>
-</div>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:info@nikunjapanthi.com.np">info@nikunjapanthi.com.np</a></p>
+    <p>Phone: <a href="tel:+9779762747282">+977 9762747282</a></p>
+</section>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/animsition.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
-<script src="js/scripts.js"></script>
+<footer>
+    <p>© 2024 Nikunj Panthi</p>
+</footer>
+
 <script>
-$(document).ready(function() {
-    $('#pagepiling').pagepiling({
-        menu: '.menu',
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-        navigation: {
-            'position': 'right',
-            'tooltips': ['Home', 'About', 'Resume', 'Contact']
-        },
-        afterRender: function(){
-            // Add class to the first active section
-            $('#pp-nav').addClass('custom');
-        },
-        afterLoad: function(anchorLink, index){
-            // Remove class from the previous section and add it to the current
-            $('#pp-nav').removeClass('custom');
-            if(index > 1){
-                $('#pp-nav').addClass('custom');
-            }
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        const imageNames = [
+            "Nikunj11.jpg", "Nikunj_Audi.jpg", "Nikunj_Ferrari.jpg", "Nikunj_Mayor.jpg",
+            "Nikunj_awfis.jpg", "Nikunj_chhabdi.jpg", "Nikunj_daura.jpg", "Nikunj_hostel.jpg",
+            "Nikunj_hyd.jpg", "Nikunj_lambo.jpg", "Nikunj_mercedez.jpg", "nikunj_kakani.jpg"
+        ];
+
+        const galleryDiv = document.getElementById("gallery");
+
+        imageNames.forEach(img => {
+            let imgElement = document.createElement("img");
+            imgElement.src = `Nikunj_images/${img}`;
+            imgElement.alt = `Photo of Nikunj Panthi - ${img}`;
+            imgElement.loading = "lazy";
+            galleryDiv.appendChild(imgElement);
+        });
     });
-});
 </script>
+
 </body>
 </html>
