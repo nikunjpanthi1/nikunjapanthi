@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Main Content Styles */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+header {
+    background-image: url('image/received_291495862284515.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-image: url('image/20221023_170815-01.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+  }
