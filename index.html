@@ -1,698 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Nikunja Panthi ">
-    <meta name="author" content="Nikunja Panthi">
-    <title>Nikunja Panthi  | Nikunja Panthi</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/johndoe.css">
-    <link rel="stylesheet" href="assets/css/nikunjapanthi.css">
+    <meta name="description" content="Nikunj Panthi - Data Science & Machine Learning Portfolio">
+    <meta name="author" content="Nikunj Panthi">
+    <title>Nikunj Panthi | Data Science & ML Portfolio</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Cyberpunk Data Science Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/nikunj.panthi"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://x.com/home"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="mailto:snikunj769@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/nikunjpanthi1/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/nikunjpanthi1"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Nikunja Panthi</h1>
-                <h6 class="header-mono" >Student | Learner | Developer</h6>
-                <a href="assets/myresume.pdf" download>
-  <button class="btn btn-primary btn-rounded">
-    <i class="ti-printer pr-2"></i>Print Resume
-  </button>
-</a>
+<body>
 
+    <!-- Interactive 3D Particle Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand-logo">&lt;Nikunj.DS /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">/About</a></li>
+                <li><a href="#skills">/Skills</a></li>
+                <li><a href="#projects">/Projects</a></li>
+                <li><a href="#experience">/Experience</a></li>
+                <li><a href="#contact">/Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="terminal-badge"><span class="pulse">●</span> STATUS: ANALYZING_DATASETS</div>
+            <h1>NIKUNJ PANTHI</h1>
+            <p class="subtitle">DATA SCIENCE & MACHINE LEARNING INTERN[cite: 1]</p>
+            
+            <div class="code-block">
+                <code>
+                    <span class="keyword">import</span> pandas <span class="keyword">as</span> pd<br>
+                    <span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> XGBoostClassifier<br>
+                    <span class="comment"># Initializing ML Model Pipeline...</span><br>
+                    model = XGBoostClassifier(ROC_AUC=<span class="number">0.80</span>) <span class="comment"># E-Commerce Churn Model</span>
+                </code>
+            </div>
+
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-brain"></i> Explore Models</a>
+                <a href="Nikunja_Panthi_CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-file-code"></i> Download CV</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/nikunjpanthi5" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/nikunja-panthi-47107a294" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:snikunj769@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/9779762747282" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+
+    <!-- Live Data Stats -->
+    <section class="metrics-bar">
+        <div class="metric-card">
+            <h3 class="counter" data-target="500000">0</h3>
+            <p>Records Processed[cite: 1]</p>
         </div>
-    </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Passionate Student and Aspiring Developer</h5>
-                <p class="mt-20" id="short-description">
-                    I am currently a student at Gandaki University, pursuing a Bachelor's degree in Information Technology. With a strong passion for web development and design...
+        <div class="metric-card">
+            <h3 class="counter" data-target="80">0</h3>
+            <p>% ROC-AUC Achieved[cite: 1]</p>
+        </div>
+        <div class="metric-card">
+            <h3 class="counter" data-target="6">0</h3>
+            <p>BIT Semester[cite: 1]</p>
+        </div>
+        <div class="metric-card">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>% Model Accuracy Goal</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am a 6th-semester Bachelor of Information Technology student at <strong>Gandaki University</strong> focused on Data Science, Machine Learning, and Analytics[cite: 1].
                 </p>
-                <p class="mt-20 d-none" id="full-description">
-                    I am currently a student at Gandaki University, pursuing a Bachelor's degree in Information Technology. With a strong passion for web development and design, I am constantly learning and exploring new technologies to enhance my skills. While I have gained valuable knowledge so far, I believe there is still so much more to learn and achieve in this ever-evolving field. My journey is just beginning, and I am excited to grow and contribute to the tech world over time.
+                <p>
+                    I have hands-on experience building end-to-end data pipelines, predictive models, RFM customer segmentation, recommendation algorithms, and business intelligence dashboards[cite: 1].
                 </p>
-                <button class="btn btn-outline-danger" id="read-more-btn" onclick="toggleDescription()">Read More</button>
+                <div class="info-list">
+                    <div><span>Degree:</span> BIT (Gandaki University)[cite: 1]</div>
+                    <div><span>Location:</span> Pokhara, Nepal[cite: 1]</div>
+                    <div><span>Email:</span> snikunj769@gmail.com[cite: 1]</div>
+                    <div><span>Phone:</span> +977 9762747282[cite: 1]</div>
+                </div>
             </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li class="brand-txt">
-                        <li><span>Birthdate</span> : August 26, 2004</li>
-                        <li><span>Email</span> : info@nikunjapanthi.com.np</li>
-                        <li><span>Phone</span> : +977 9762747282</li>
-                        <li><span>WhatsApp</span> : +977 9762747282</li>
-                        <li><span>Address</span> : Pokhara, Nepal</li>
-                    </li>
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="term-title">bash - nikunj@datascience:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">nikunj@ds:~$</span> cat focus_areas.json</p>
+                    <pre>{
+  "core": ["Data Science", "Machine Learning", "Data Analytics"],
+  "specialization": ["Predictive Modeling", "Customer Intelligence"],
+  "frameworks": ["Scikit-learn", "XGBoost", "Pandas", "Streamlit"],
+  "status": "Seeking ML & Data Science Internships"
+}</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack / Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title"><span>02.</span> Tech Stack & Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-code"></i> Programming & Data</h3>
+                <div class="tags">
+                    <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>PostgreSQL</span><span>MySQL</span>[cite: 1]
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-network-wired"></i> Machine Learning</h3>
+                <div class="tags">
+                    <span>Scikit-learn</span><span>XGBoost</span><span>Random Forest</span><span>K-Means</span><span>Linear Regression</span><span>Feature Engineering</span>[cite: 1]
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-chart-line"></i> Analytics & BI</h3>
+                <div class="tags">
+                    <span>EDA</span><span>RFM Analysis</span><span>Power BI</span><span>DAX</span><span>Streamlit</span><span>Statistics</span>[cite: 1]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title"><span>03.</span> Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-tag">FEATURED ML PROJECT</div>
+                <h3>E-Commerce Customer Intelligence & Analytics</h3>
+                <p>An end-to-end data intelligence portal covering EDA, predictive modeling, RFM customer segmentation, purchase recommendation algorithms, and interactive BI dashboards[cite: 1].</p>
+                <ul class="project-features">
+                    <li>Cleaned and processed ~500,000 transaction records using Python & PostgreSQL[cite: 1].</li>
+                    <li>RFM segmentation into Champions, Loyal, At-Risk, and Lost categories[cite: 1].</li>
+                    <li>Trained Random Forest and XGBoost churn models achieving <strong>~0.80 ROC-AUC</strong>[cite: 1].</li>
+                    <li>Deployed a Streamlit Customer 360 app and Power BI report[cite: 1].</li>
                 </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/nikunj.panthi"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://x.com/home"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="mailto:info@nikunjapanthi.com.np"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/nikunjpanthi1"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/nikunjpanthi1"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Learnings</h3>
-                <span class="line mb-5"></span>
-
-                <!-- UX Design -->
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle" id="ux-short">
-                            UX Design focuses on creating user-friendly interfaces...
-                        </p>
-                        <p class="subtitle d-none" id="ux-full">
-                            UX Design focuses on creating user-friendly interfaces that enhance user satisfaction. It involves research, wireframing, prototyping, and usability testing to ensure a seamless experience.
-                        </p>
-                        <button class="btn btn-outline-danger btn-sm" onclick="toggleLearning('ux')">Read More</button>
-                        <hr>
-                    </div>
-                </div>
-
-                <!-- Web Development -->
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle" id="web-short">
-                            Web Development involves building and maintaining websites...
-                        </p>
-                        <p class="subtitle d-none" id="web-full">
-                            Web Development involves building and maintaining websites using technologies like HTML, CSS, JavaScript, and frameworks. It includes both front-end and back-end development to create functional and visually appealing websites.
-                        </p>
-                        <button class="btn btn-outline-danger btn-sm" onclick="toggleLearning('web')">Read More</button>
-                        <hr>
-                    </div>
-                </div>
-
-                <!-- Programming -->
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-code icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Programming</h6>
-                        <p class="subtitle" id="prog-short">
-                            Programming is the process of writing instructions for computers...
-                        </p>
-                        <p class="subtitle d-none" id="prog-full">
-                            Programming is the process of writing instructions for computers to perform specific tasks. It involves problem-solving, logic, and coding in languages like Python, Java, and C++ to create software applications.
-                        </p>
-                        <button class="btn btn-outline-danger btn-sm" onclick="toggleLearning('prog')">Read More</button>
-                        <hr>
-                    </div>
+                <div class="project-tech">
+                    <span>Python</span><span>PostgreSQL</span><span>Machine Learning</span><span>Power BI</span><span>Streamlit</span>[cite: 1]
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-            <div class="row">
-                <!-- Learnings Section -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Learnings</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">Java</h6>
-                            <p class="subtitle">Learning object-oriented programming and building applications using Java.</p>
-                            <hr>
-                            <h6 class="title text-danger">C++</h6>
-                            <p class="subtitle">Exploring data structures, algorithms, and system-level programming with C++.</p>
-                            <hr>
-                            <h6 class="title text-danger">Web Development</h6>
-                            <p class="subtitle">Developing both front-end and back-end web applications using modern technologies.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Education Section -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2023 - Present</h6>
-                            <p>Bachelor's Degree in Information Technology</p>
-                            <p class="subtitle">Currently pursuing a Bachelor's degree at Gandaki University, focusing on IT and software development.</p>
-                            <hr>
-                            <h6 class="title text-danger">2021 - 2023</h6>
-                            <p>Class 12 - Science with Computer</p>
-                            <p class="subtitle">Completed higher secondary education at Xavier International College, majoring in Science with Computer as an optional subject.</p>
-                        </div>
-                    </div>
+            <div class="project-card">
+                <h3>BroCar – Vehicle Rental Platform</h3>
+                <p>Full-stack vehicle rental platform with booking workflows, admin controls, vehicle management, and eSewa payment integration[cite: 1].</p>
+                <div class="project-tech">
+                    <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>eSewa API</span>[cite: 1]
                 </div>
+            </div>
 
-                <!-- Skills and Languages Section -->
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Java</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>C</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>HTML5</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>CSS</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Nepali</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Hindi</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project-card">
+                <h3>nsureinsurance.com</h3>
+                <p>Live insurance web portal designed and deployed with responsive layout structure and content delivery workflows[cite: 1].</p>
+                <div class="project-tech">
+                    <span>Web Development</span><span>Deployment</span>[cite: 1]
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">100</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
-                        </div>
-                    </div>
+    <!-- Experience / Education -->
+    <section class="section" id="experience">
+        <h2 class="section-title"><span>04.</span> Education & Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Information Technology (BIT)</h3>
+                    <p><strong>Gandaki University, Pokhara, Nepal</strong> — 6th Semester[cite: 1]</p>
+                    <p>Coursework: AI, Data Mining, DBMS, DSA, Statistics & Probability, Software Engineering[cite: 1].</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">3</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">1</h1>
-                            <p class="text-light mb-1">Current Projects</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2</h1>
-                            <p class="text-light mb-1">Coffee Drinked</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <div class="timeline-content">
+                    <h3>Private Academic Tutor</h3>
+                    <p>Explained complex technical and mathematical concepts to students, developing strong interpersonal and data breakdown skills[cite: 1].</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For Freelance</h2>
-           <a href="https://wa.me/9779762747282?text=Hi,%20I%20want%20to%20hire%20you." target="_blank">
-  <button class="btn bg-primary w-lg">Hire Me</button>
-</a>
+    <!-- Contact Section -->
+    <section class="section text-center" id="contact">
+        <h2 class="section-title"><span>05.</span> Get In Touch</h2>
+        <p class="contact-desc">I am actively looking for Data Science, Machine Learning, or Data Analytics internship opportunities[cite: 1].</p>
+        <a href="https://wa.me/9779762747282?text=Hi%20Nikunj,%20I%20reviewed%20your%20Data%20Science%20portfolio." target="_blank" class="btn btn-primary btn-large">
+            <i class="fa-brands fa-whatsapp"></i> Initiate Communication
+        </a>
+    </section>
 
-        </div>
-    </section>
-    <!-- Portfolio Section -->
-     <!-- 
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
-                    </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
-                    </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
-                </div>
-                <div class="portfolio-container">
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                         
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>              
-                    </div>
-                    <div class="col-md-6 col-lg-4 web">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>     
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
-                    </div>
-                </div> 
-            </div>  
-        </div>            
-    </section>
-    >
-    <!-- End of portfolio section 
-    <section class="section" id="blog">
-        <div class="container">
-            
-            <h2 class="mb-5"><span class="text-danger">My</span> Blogs</h2>
-            <div class="row"> 
-                <div class="blog-card">
-                    <div class="img-holder">            
-                        <img src="assets/imgs/blog1.jpg" alt="Blog Image 1">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti.</p>
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Blog Image 2">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas.</p>
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Blog Image 3">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Porro Quisqua</h6>
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas.</p>
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-                end of blog-card -->
-            </div>
-        </div>
-    </section>
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+977 9762747282</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">Pokhara, Nepal</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@nikunjapanthi.com.np</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-whatsapp icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">WhatsApp :<br> <span class="text-muted">+977 9762747282</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link" href="https://www.facebook.com/nikunj.panthi"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://x.com/home"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="mailto:info@nikunjapanthi.com.np"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://www.instagram.com/nikunjpanthi1"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link" href="https://github.com/nikunjpanthi1"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul>  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <span class="text-danger" title="Bootstrap 4 Themes and Dashboards">NIKUNJ</span></a> 
-            </p>
-        </div>
+    <footer>
+        <p>&copy; 2026 Nikunj Panthi. Built with 3.js & Neural Aesthetics.</p>
     </footer>
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-    <script>
-        function toggleDescription() {
-            const shortDesc = document.getElementById('short-description');
-            const fullDesc = document.getElementById('full-description');
-            const btn = document.getElementById('read-more-btn');
-
-            if (fullDesc.classList.contains('d-none')) {
-                shortDesc.classList.add('d-none');
-                fullDesc.classList.remove('d-none');
-                btn.textContent = 'Read Less';
-            } else {
-                shortDesc.classList.remove('d-none');
-                fullDesc.classList.add('d-none');
-                btn.textContent = 'Read More';
-            }
-        }
-
-        function toggleLearning(section) {
-            const shortDesc = document.getElementById(`${section}-short`);
-            const fullDesc = document.getElementById(`${section}-full`);
-            const btn = document.querySelector(`[onclick="toggleLearning('${section}')"]`);
-
-            if (fullDesc.classList.contains('d-none')) {
-                shortDesc.classList.add('d-none');
-                fullDesc.classList.remove('d-none');
-                btn.textContent = 'Read Less';
-            } else {
-                shortDesc.classList.remove('d-none');
-                fullDesc.classList.add('d-none');
-                btn.textContent = 'Read More';
-            }
-        }
-    </script>
+    <!-- Three.js for 3D Particle Canvas Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
