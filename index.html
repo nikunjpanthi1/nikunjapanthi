@@ -25,6 +25,7 @@
             <a href="#home" class="brand-logo">&lt;Nikunj.DS /&gt;</a>
             <ul class="nav-links">
                 <li><a href="#about">/About</a></li>
+                <li><a href="#simulator">/Interactive_Lab</a></li>
                 <li><a href="#skills">/Skills</a></li>
                 <li><a href="#projects">/Projects</a></li>
                 <li><a href="#experience">/Experience</a></li>
@@ -36,21 +37,21 @@
     <!-- Hero Header -->
     <header class="hero" id="home">
         <div class="hero-content">
-            <div class="terminal-badge"><span class="pulse">●</span> STATUS: ANALYZING_DATASETS</div>
+            <div class="terminal-badge"><span class="pulse">●</span> SYSTEM_READY // NEURAL_PIPELINE_ACTIVE</div>
             <h1>NIKUNJ PANTHI</h1>
-            <p class="subtitle">DATA SCIENCE & MACHINE LEARNING INTERN</p>
+            <p class="subtitle">DATA SCIENCE & MACHINE LEARNING ENGINEER</p>
             
             <div class="code-block">
                 <code>
                     <span class="keyword">import</span> pandas <span class="keyword">as</span> pd<br>
                     <span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> XGBoostClassifier<br>
-                    <span class="comment"># Initializing ML Model Pipeline...</span><br>
-                    model = XGBoostClassifier(ROC_AUC=<span class="number">0.80</span>) <span class="comment"># E-Commerce Churn Model</span>
+                    <span class="comment"># Initializing End-to-End Analytics & Prediction Engine...</span><br>
+                    model = XGBoostClassifier(n_estimators=<span class="number">100</span>, learning_rate=<span class="number">0.05</span>)
                 </code>
             </div>
 
             <div class="btn-group">
-                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-brain"></i> Explore Models</a>
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-brain"></i> Explore Projects</a>
                 <a href="Nikunja_Panthi_CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-file-code"></i> Download CV</a>
             </div>
 
@@ -63,23 +64,19 @@
         </div>
     </header>
 
-    <!-- Live Data Stats -->
+    <!-- General Engineering High-Level Overview -->
     <section class="metrics-bar">
         <div class="metric-card">
-            <h3 class="counter" data-target="500000">0</h3>
-            <p>Records Processed</p>
+            <h3>Machine Learning</h3>
+            <p>Predictive Modeling & Tuning</p>
         </div>
         <div class="metric-card">
-            <h3 class="counter" data-target="80">0</h3>
-            <p>% ROC-AUC Achieved</p>
+            <h3>Data Engineering</h3>
+            <p>ETL & Pipeline Processing</p>
         </div>
         <div class="metric-card">
-            <h3 class="counter" data-target="6">0</h3>
-            <p>BIT Semester</p>
-        </div>
-        <div class="metric-card">
-            <h3 class="counter" data-target="100">0</h3>
-            <p>% Model Accuracy Goal</p>
+            <h3>Analytics & BI</h3>
+            <p>Dashboards & RFM Intelligence</p>
         </div>
     </section>
 
@@ -89,13 +86,13 @@
         <div class="about-grid">
             <div class="about-text">
                 <p>
-                    I am a 6th-semester Bachelor of Information Technology student at <strong>Gandaki University</strong> focused on Data Science, Machine Learning, and Analytics.
+                    I am a Data Science and Machine Learning practitioner focused on building end-to-end analytical pipelines, predictive models, RFM customer intelligence solutions, and interactive dashboards.
                 </p>
                 <p>
-                    I have hands-on experience building end-to-end data pipelines, predictive models, RFM customer segmentation, recommendation algorithms, and business intelligence dashboards.
+                    My work bridges raw data processing with actionable machine learning outcomes—from optimizing hyperparameter tuning to deploying user-facing analytics platforms.
                 </p>
                 <div class="info-list">
-                    <div><span>Degree:</span> BIT (Gandaki University)</div>
+                    <div><span>Focus:</span> Data Science & ML</div>
                     <div><span>Location:</span> Pokhara, Nepal</div>
                     <div><span>Email:</span> snikunj769@gmail.com</div>
                     <div><span>Phone:</span> +977 9762747282</div>
@@ -114,8 +111,65 @@
   "core": ["Data Science", "Machine Learning", "Data Analytics"],
   "specialization": ["Predictive Modeling", "Customer Intelligence"],
   "frameworks": ["Scikit-learn", "XGBoost", "Pandas", "Streamlit"],
-  "status": "Seeking ML & Data Science Internships"
+  "status": "Seeking ML & Data Science Opportunities"
 }</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW CRAZY INTERACTIVE DATA SCIENCE LAB -->
+    <section class="section" id="simulator">
+        <h2 class="section-title"><span>02.</span> Interactive Data Science Lab</h2>
+        
+        <!-- Live Hyperparameter Tuning Simulator -->
+        <div class="lab-container">
+            <div class="lab-header">
+                <h3><i class="fa-solid fa-sliders"></i> Real-time ML Hyperparameter Tuning Visualizer</h3>
+                <p>Adjust parameters to simulate Model Training, Loss Curves, and Convergence Speed.</p>
+            </div>
+            <div class="lab-grid">
+                <div class="lab-controls">
+                    <div class="control-group">
+                        <label>Learning Rate ($\alpha$): <span id="lr-val">0.05</span></label>
+                        <input type="range" id="param-lr" min="0.01" max="0.5" step="0.01" value="0.05">
+                    </div>
+                    <div class="control-group">
+                        <label>Estimators ($N$ trees): <span id="trees-val">100</span></label>
+                        <input type="range" id="param-trees" min="10" max="300" step="10" value="100">
+                    </div>
+                    <div class="control-group">
+                        <label>Max Tree Depth: <span id="depth-val">6</span></label>
+                        <input type="range" id="param-depth" min="2" max="15" step="1" value="6">
+                    </div>
+                    <button id="run-simulation" class="btn btn-primary"><i class="fa-solid fa-play"></i> Execute Training Run</button>
+                </div>
+                <div class="lab-output">
+                    <div class="terminal-card">
+                        <div class="terminal-header"><span class="term-title">Training Output Terminal</span></div>
+                        <div class="terminal-body" id="sim-log">
+                            <p class="comment"># Ready. Click 'Execute Training Run' to test hyperparameters...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Customer RFM Segment Explorer -->
+        <div class="lab-container margin-top">
+            <div class="lab-header">
+                <h3><i class="fa-solid fa-chart-pie"></i> RFM Customer Segmentation Explorer</h3>
+                <p>Click segments to inspect targeted actions generated from transaction data.</p>
+            </div>
+            <div class="rfm-explorer">
+                <div class="rfm-tabs">
+                    <button class="rfm-btn active" data-segment="champions">Champions</button>
+                    <button class="rfm-btn" data-segment="loyal">Loyal Customers</button>
+                    <button class="rfm-btn" data-segment="atrisk">At-Risk</button>
+                    <button class="rfm-btn" data-segment="lost">Lost Customers</button>
+                </div>
+                <div class="rfm-content" id="rfm-display">
+                    <!-- Populated dynamically via JS -->
                 </div>
             </div>
         </div>
@@ -123,7 +177,7 @@
 
     <!-- Tech Stack / Skills Section -->
     <section class="section" id="skills">
-        <h2 class="section-title"><span>02.</span> Tech Stack & Skills</h2>
+        <h2 class="section-title"><span>03.</span> Tech Stack & Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3><i class="fa-solid fa-code"></i> Programming & Data</h3>
@@ -148,16 +202,25 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <h2 class="section-title"><span>03.</span> Featured Projects</h2>
+        <h2 class="section-title"><span>04.</span> Featured Projects</h2>
         <div class="projects-grid">
+            
+            <!-- E-COMMERCE PROJECT (METRICS KEPT HERE EXCLUSIVELY) -->
             <div class="project-card featured">
                 <div class="project-tag">FEATURED ML PROJECT</div>
                 <h3>E-Commerce Customer Intelligence & Analytics</h3>
-                <p>An end-to-end data intelligence portal covering EDA, predictive modeling, RFM customer segmentation, purchase recommendation algorithms, and interactive BI dashboards.</p>
+                <p>An end-to-end data intelligence portal covering EDA, predictive modeling, customer segmentation, recommendation algorithms, and BI dashboards.</p>
+                
+                <!-- Specific Metrics Callout Box -->
+                <div class="project-stats-box">
+                    <div class="p-stat"><strong>~500,000</strong><span>Rows Processed</span></div>
+                    <div class="p-stat"><strong>~0.80</strong><span>ROC-AUC Score</span></div>
+                </div>
+
                 <ul class="project-features">
-                    <li>Cleaned and processed ~500,000 transaction records using Python & PostgreSQL.</li>
+                    <li>Cleaned and processed transaction data using Python & PostgreSQL.</li>
                     <li>RFM segmentation into Champions, Loyal, At-Risk, and Lost categories.</li>
-                    <li>Trained Random Forest and XGBoost churn models achieving <strong>~0.80 ROC-AUC</strong>.</li>
+                    <li>Trained Random Forest and XGBoost churn models.</li>
                     <li>Deployed a Streamlit Customer 360 app and Power BI report.</li>
                 </ul>
                 <div class="project-tech">
@@ -185,18 +248,18 @@
 
     <!-- Experience / Education -->
     <section class="section" id="experience">
-        <h2 class="section-title"><span>04.</span> Education & Experience</h2>
+        <h2 class="section-title"><span>05.</span> Education & Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-date">Academic Studies</div>
                 <div class="timeline-content">
                     <h3>Bachelor of Information Technology (BIT)</h3>
-                    <p><strong>Gandaki University, Pokhara, Nepal</strong> — 6th Semester</p>
+                    <p><strong>Gandaki University, Pokhara, Nepal</strong></p>
                     <p>Coursework: AI, Data Mining, DBMS, DSA, Statistics & Probability, Software Engineering.</p>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">Current</div>
+                <div class="timeline-date">Professional Activity</div>
                 <div class="timeline-content">
                     <h3>Private Academic Tutor</h3>
                     <p>Explained complex technical and mathematical concepts to students, developing strong interpersonal and data breakdown skills.</p>
@@ -207,15 +270,15 @@
 
     <!-- Contact Section -->
     <section class="section text-center" id="contact">
-        <h2 class="section-title"><span>05.</span> Get In Touch</h2>
-        <p class="contact-desc">I am actively looking for Data Science, Machine Learning, or Data Analytics internship opportunities.</p>
+        <h2 class="section-title"><span>06.</span> Get In Touch</h2>
+        <p class="contact-desc">I am actively looking for Data Science, Machine Learning, or Data Analytics opportunities.</p>
         <a href="https://wa.me/9779762747282?text=Hi%20Nikunj,%20I%20reviewed%20your%20Data%20Science%20portfolio." target="_blank" class="btn btn-primary btn-large">
             <i class="fa-brands fa-whatsapp"></i> Initiate Communication
         </a>
     </section>
 
     <footer>
-        <p>&copy; 2026 Nikunj Panthi. Built with 3.js & Neural Aesthetics.</p>
+        <p>&copy; 2026 Nikunj Panthi. Built with 3.js & Interactive Neural Aesthetics.</p>
     </footer>
 
     <!-- Three.js for 3D Particle Canvas Animation -->
