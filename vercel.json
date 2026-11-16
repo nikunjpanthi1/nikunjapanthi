@@ -1,0 +1,13 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/dailygerman",
+      "destination": "https://learn-daily-german.vercel.app/"
+    },
+    {
+      "source": "/dailygerman/:path*",
+      "destination": "https://learn-daily-german.vercel.app/:path*"
+    }
+  ]
+}
