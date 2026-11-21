@@ -1,11 +1,8 @@
 
-# Robots.txt for Nikunja Panthi's Portfolio Website
+# Robots.txt for Nikunja (Nikunj) Panthi's Portfolio
 
 User-agent: *
 Allow: /
 
-# Block private directories (only if they exist)
-Disallow: /private/
-
-# Sitemap
+# Sitemap location
 Sitemap: https://nikunjapanthi.com.np/sitemap.xml
