@@ -1,7 +1,11 @@
-# robots.txt for Nikunj Panthi's Portfolio Website
+
+# Robots.txt for Nikunja Panthi's Portfolio Website
 
 User-agent: *
-Disallow: /private/       # Optional: Disallow any sensitive folders (if applicable)
+Allow: /
 
-# Sitemap location
-Sitemap: https://raw.githubusercontent.com/nikunjpanthi1/nikunjapanthi/main/sitemap.xml
+# Block private directories (only if they exist)
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://nikunjapanthi.com.np/sitemap.xml
